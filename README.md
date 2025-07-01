@@ -7,8 +7,10 @@ The preprocessed EEG and MEG data with the according stimuli channels can be dow
 For audio signals and transcript of the german audio book contact the authors.
 
 1. EEG data was preprocessed using *EEG_preprocess_OpenAccess.py* 
-2. MEG data was preprocessed using *MEG_preprocess_OpenAccess.py* 
-3. For aligning audio book with stimuli channels, segmenting the continuous data into epochs for each word and labeling each epoch with according word class use *get_word_classes_epochs_OpenAccess.py*
-4. Statistical tests where done using brainstorm software: *https://neuroimage.usc.edu/brainstorm/Installation*
-5. *semantic_predictability_OpenAccess.py*: calculating the semantic predictability scores for each word class (NOUN, VERB, ADJ, PROPN) with Llama 3.2 model
-6. *syntactic_predictability_OpenAccess.py*: generating syntactic predictability scores using hidden representations of Llama 3.2 model and class labels of following word
+2. MEG data was preprocessed using *MEG_preprocess_OpenAccess.py*
+3. For aligning the audio book with stimuli channels we used Forced Alignment *https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic* with the audio signals and transcript to get the word onsets
+4. Each word in the transcript was classified into word classes using spaCy *https://spacy.io/*
+5. For segmenting the continuous data into epochs for each word and labeling each epoch with according word class use *get_word_classes_epochs_OpenAccess.py*
+6. Statistical tests where done using brainstorm software: *https://neuroimage.usc.edu/brainstorm/Installation*
+7. *semantic_predictability_OpenAccess.py*: calculating the semantic predictability scores for each word class (NOUN, VERB, ADJ, PROPN) with Llama 3.2 model
+8. *syntactic_predictability_OpenAccess.py*: generating syntactic predictability scores using hidden representations of Llama 3.2 model and class labels of following word
