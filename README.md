@@ -3,7 +3,7 @@
 
 This repository explains the preprocessing and methods used to analyze the EEG and MEG data. The data was recorded using combined EEG and MEG measurements while the participants listened to an hour of the science fiction audio book "Vakuum" by Phillip P. Peterson.
 The word classes and onsets for each word in the audio book chapters are saved in Excels/...wordclasses.xlsx and Excel/...Vakuum_word_boundaries.npy.
-The preprocessed EEG and MEG data with the according stimuli channels can be downloaded from Zenodo (EEG/MEG recordings using german audio book).
+The preprocessed EEG and MEG data with the according stimuli channels can be downloaded from Zenodo (https://zenodo.org/records/15744486 EEG/MEG recordings using german audio book).
 For audio signals and transcript of the german audio book contact the authors.
 
 1. EEG data was preprocessed using *EEG_preprocess_OpenAccess.py* 
